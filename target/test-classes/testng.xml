@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="FlightSearchSuite" parallel="methods" thread-count="5">
-	<listeners>
+    <listeners>
         <listener class-name="flight.TestListener"/>
     </listeners>
-    <test name="Smoke Tests">
+    <test name="Flight Tests">
         <classes>
             <class name="flight.FlightTest">
                 <methods>
                     <include name="testGetCheapestPrice"/>
-                </methods>
-            </class>
-        </classes>
-    </test>
-    <test name="Regression Tests">
-        <classes>
-            <class name="flight.FlightTest">
-                <methods>
                     <include name="testGetLongestDuration"/>
                 </methods>
             </class>
         </classes>
     </test>
-    
 </suite>

@@ -9,4 +9,5 @@ Feature: Flight Booking
     Examples:
       | fromLocation | toLocation  |
       |detroit			 |chicago		|
+      |Dallas				 |Orlando		|
       
